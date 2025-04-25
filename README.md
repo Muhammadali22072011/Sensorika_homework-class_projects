@@ -1,0 +1,1 @@
+# Sensorika_homework-class_projects
