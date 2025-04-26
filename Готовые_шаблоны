@@ -1,0 +1,128 @@
+# Полный Набор Форм (HTML + CSS) с Инструкцией, Лайфхаками и Комментариями
+
+---
+
+## Общая инструкция
+
+1. Скопируй весь код на свою HTML-страницу.
+2. Все стили встроены прямо в `<style>`, их можно редактировать.
+3. Выбирай нужную форму: Регистрация, Вход, Контакты, Подписка, Бронирование.
+4. Чтобы добавить или изменить поля, используй примеры в коде.
+5. Следи за комментариями — они помогут тебе быстро ориентироваться.
+
+---
+
+# Полный HTML-код со стилями и комментариями
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Формы на сайте</title>
+
+  <!-- Общие стили для всех форм -->
+  <style>
+    /* Стили формы */
+    form {
+      width: 300px; /* Ширина формы */
+      padding: 20px; /* Отступы внутри */
+      background: #fff; /* Цвет фона */
+      border-radius: 10px; /* Скругление углов */
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Тень */
+      display: flex;
+      flex-direction: column;
+      gap: 15px; /* Расстояние между элементами */
+      font-family: Arial, sans-serif;
+      margin: 20px auto; /* Центрирование */
+    }
+
+    /* Заголовок формы */
+    form h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    /* Поля ввода и текстовые области */
+    form input, form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    /* Кнопка отправки */
+    form button {
+      padding: 10px;
+      background: #3498db; /* Цвет кнопки */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* Эффект наведения на кнопку */
+    form button:hover {
+      background: #2980b9;
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- Форма Регистрации -->
+<form action="#">
+  <h2>Register</h2>
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required>
+  <button type="submit">Register</button>
+</form>
+
+<br><br>
+
+<!-- Форма Входа -->
+<form action="#">
+  <h2>Login</h2>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Password" required>
+  <button type="submit">Login</button>
+</form>
+
+<br><br>
+
+<!-- Форма Обратной Связи -->
+<form action="#">
+  <h2>Contact Us</h2>
+  <input type="text" placeholder="Your Name" required>
+  <input type="email" placeholder="Your Email" required>
+  <textarea placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<br><br>
+
+<!-- Форма Подписки -->
+<form action="#">
+  <h2>Subscribe</h2>
+  <input type="email" placeholder="Enter your email" required>
+  <button type="submit">Subscribe</button>
+</form>
+
+<br><br>
+
+<!-- Форма Бронирования -->
+<form action="#">
+  <h2>Book Now</h2>
+  <input type="text" placeholder="Your Name" required>
+  <input type="date" required>
+  <input type="time" required>
+  <button type="submit">Book</button>
+</form>
+
+</body>
+</html>
