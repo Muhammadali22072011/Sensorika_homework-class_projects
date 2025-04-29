@@ -1,0 +1,131 @@
+/* Стили для всех элементов */
+* {
+  font-family: 'Times New Roman', serif !important; /* Устанавливаем общий шрифт. */
+}
+
+/* Стили для тела страницы */
+body {
+  height: 100vh; /* Высота всей страницы = 100% высоты экрана. */
+  margin: 0; /* Убираем внешние отступы. */
+  display: flex;
+  flex-direction: column; /* Сначала шапка, потом форма по вертикали. */
+  align-items: center; /* По центру по горизонтали. */
+  background: linear-gradient(to right, blue, pink); /* Фон с переходом цвета. */
+}
+
+/* --- Навигация (шапка сайта) --- */
+
+/* Панель навигации */
+.navbar {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Логотип */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Ссылки меню */
+.menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Бургер меню (по умолчанию скрыто) */
+.burger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Скрываем чекбокс */
+#toggle-menu {
+  display: none;
+}
+
+/* --- Адаптация для телефонов --- */
+@media (max-width: 768px) {
+
+  /* Меню скрыто */
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+  }
+
+  /* Показываем бургер */
+  .burger {
+    display: block;
+  }
+
+  /* Когда нажали на бургер — показываем меню */
+  #toggle-menu:checked ~ .menu {
+    display: flex;
+  }
+}
+
+/* --- Блок регистрации --- */
+
+.register-block {
+  margin-top: 100px; /* Отступ сверху (чтобы шапка не перекрывала форму). */
+  border: 1px solid white;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px 20px 0px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 280px;
+}
+
+/* Стили для input и кнопки внутри формы */
+.register-block input,
+.register-block button {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 6px;
+  height: 30px;
+}
+
+/* Кнопка */
+.btn {
+  width: 200px !important;
+  background: linear-gradient(to right, blue, pink);
+  border: 1px solid grey;
+  color: #ff9988;
+}
+
+/* При наведении на кнопку */
+.btn:hover {
+  background: linear-gradient(to right, purple, orange);
+  color: white;
+  transition: 0.5s;
+}
+
+/* Заголовок регистрации */
+.regis {
+  color: #28A745;
+}
+
+/* Стили для полей ввода */
+.input {
+  padding-left: 10px;
+}
