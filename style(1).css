@@ -1,0 +1,68 @@
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* чтобы кнопки и инпут шли сверху вниз */
+  height: 100vh; /* высота экрана */
+}
+
+body {
+  background-color: #f0f0f3;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/* Панель калькулятора */
+div {
+  background: linear-gradient(to bottom, #e0e0e0, #f9f9f9, #e0e0e0);
+  width: 280px;
+  height: 400px !important;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px #bebebe,
+              -10px -10px 20px #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Поле ввода */
+.input {
+  margin-bottom: 20px; 
+  height: 110px;
+  width: 220px;
+  border: 1px outset rgb(255, 123, 98);
+  border-radius: 25px;
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+  background-color: #f0f0f3;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  outline: none;
+}
+
+/* Кнопки */
+button {
+  height: 46px;
+  width: 46px;
+  margin: 4px;
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+  background-color: #f0f0f3;
+  box-shadow: 5px 5px 10px #bebebe,
+              -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* Эффект нажатия */
+button:active {
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+}
