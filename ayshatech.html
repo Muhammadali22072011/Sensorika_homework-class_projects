@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayshatech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #f7f7f7, #fff);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #5D3BEE;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .buttons a {
+      margin-left: 15px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .sign-in {
+      border: 1px solid #5D3BEE;
+      color: #5D3BEE;
+    }
+
+    .sign-up {
+      background: #5D3BEE;
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+      background: white;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .hero-text h1 span {
+      background: #5D3BEE;
+      color: white;
+      padding: 0 10px;
+      border-radius: 6px;
+    }
+
+    .hero-text p {
+      margin-top: 20px;
+      color: #666;
+      max-width: 500px;
+    }
+
+    .hero-buttons {
+      margin-top: 30px;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 12px 24px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .join-btn {
+      background: #5D3BEE;
+      color: white;
+    }
+
+    .learn-btn {
+      border: 1px solid #ccc;
+      color: #333;
+    }
+
+    .hero img {
+      max-width: 350px;
+      border-radius: 12px;
+    }
+
+    .courses {
+      padding: 60px 10%;
+    }
+
+    .courses h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .course-list {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .course {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+    }
+
+    .course img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .course h3 {
+      margin: 15px 0 10px;
+      font-size: 18px;
+    }
+
+    .course p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .course a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #5D3BEE;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Ayshatech</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Prices</a>
+      <a href="#">Courses</a>
+    </nav>
+    <div class="buttons">
+      <a href="#" class="sign-in">Sign in</a>
+      <a href="#" class="sign-up">Sign up</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Best online platform for <span>learning</span></h1>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...</p>
+      <div class="hero-buttons">
+        <a href="#" class="join-btn">Join for free</a>
+        <a href="#" class="learn-btn">Learn how</a>
+      </div>
+    </div>
+    <img src="https://i.imgur.com/h9GepQG.png" alt="Hero Image">
+  </section>
+
+  <section class="courses">
+    <h2>Most popular courses</h2>
+    <div class="course-list">
+      <div class="course">
+        <img src="https://i.imgur.com/z7hXpJc.jpg" alt="Graphic Design">
+        <h3>Graphic Design</h3>
+        <p>Graphic design is an ever-expanding discipline. A great designer is not just someone who is skilled and versatile...</p>
+        <a href="#">Enroll course</a>
+      </div>
+      <div class="course">
+        <img src="https://i.imgur.com/UoU92Om.jpg" alt="UI/UX Design">
+        <h3>UI/UX Design</h3>
+        <p>UX design is an ever-expanding creative discipline. Learn how to craft intuitive and smart interfaces for web and mobile.</p>
+        <a href="#">Enroll course</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
